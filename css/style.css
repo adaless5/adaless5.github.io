@@ -1,0 +1,203 @@
+/* *,
+*::before,
+*::after{
+    box-sizing: border-box;
+} */
+
+/* :root{
+    --ff-primary: 'Arial';
+    --ff-secondary: ;
+} */
+
+body{
+    background-color: #121212;
+}
+
+.intro{
+    box-sizing: border-box;
+    background-image: url('../images/Hardwood_Banner.jpg');
+    background-repeat: repeat-x;
+    height: 435px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-top: 42px;
+    margin-bottom: 0px;
+}
+
+.block_container{
+    display: grid;
+    box-sizing: border-box;
+    grid-column-gap: 1em;
+    grid-template-areas: 
+    "img title" 
+    "img subtitle";
+    grid-template-columns: min-content max-content;
+    background-color:#121212bb;
+    height: 350px;   
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    padding-left: auto;
+    padding-right: auto;
+    justify-content: center;
+}
+
+.intro__image{
+    display: grid;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.section__title--intro{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: whitesmoke;
+    margin: 0px;
+    padding-top: 1em;
+    grid-area: title;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section__subtitle--intro{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #0b0b0b;
+    background-color: whitesmoke;
+    width: 1000px;
+    height: 60px;
+    grid-area: subtitle;
+    grid-column: -1 / 1;
+    grid-row: 2;
+    text-align: right;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_container{
+    background-color: whitesmoke;
+    height: 320px;
+    width: 340px;
+    padding-top: 20px;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: img;
+}
+
+.my-services{
+    box-sizing: border-box;
+    background-color: #121212;
+    margin-top: 0px;
+    height: min-content;
+    padding-top: 4em;
+    padding-left: 10em;
+    padding-right: 10em;
+    padding-bottom: 4em;
+    justify-content: center;
+    border: 50px solid whitesmoke;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+p{
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:whitesmoke;
+}
+
+.button_container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.btn{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.about-me{
+    box-sizing: border-box;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+
+.about-me__body{
+    display: grid;
+    justify-content: center;
+    grid-column: 400px 400px;
+    grid-column-gap: 2em;
+    grid-template-columns: min-content max-content;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.about-me__desc{
+    grid-column: 1;
+    width: 400px;
+}
+
+.img_portrait{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 0;
+    border: 20px solid whitesmoke;
+}
+
+.my-work{
+    background-color:  whitesmoke;
+    text-align: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    border: 50px solid #121212;
+}
+
+.section__title--work{
+    color: #121212;
+}
+
+.section__subtitle--work{
+    color: #121212;
+    padding: 1em;
+}
+
+.portfolio__img{
+    padding: 1em;
+
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+}
+
+.portfolio__img:hover{
+    transform: scale(1.1);
+    opacity: .75;
+}
+
